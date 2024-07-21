@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Cormorant SC";
+  src:
+    url("$fonts/CormorantSC/CormorantSC.woff2") format("woff2"),
+    url("$fonts/CormorantSC/CormorantSC.woff") format("woff"),
+    url("$fonts/CormorantSC/CormorantSC.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("$fonts/Inter/Inter-Light.woff2") format("woff2"),
+    url("$fonts/Inter/Inter-Light.woff") format("woff"),
+    url("$fonts/Inter/Inter-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("$fonts/Inter/Inter-Medium.woff2") format("woff2"),
+    url("$fonts/Inter/Inter-Medium.woff") format("woff"),
+    url("$fonts/Inter/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src:
+    url("$fonts/Inter/Inter-Bold.woff2") format("woff2"),
+    url("$fonts/Inter/Inter-Bold.woff") format("woff"),
+    url("$fonts/Inter/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin CormorantSC {
+  font-family: "Cormorant SC", "Times New Roman";
+  font-weight: 500;
+}
+
+@mixin Inter {
+  font-family: "Inter", sans-serif;
+}
+
+.heading1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  @include CormorantSC;
+}
+
+.heading2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  @include CormorantSC;
+}
+
+.paragraph_l_light {
+  font-weight: 300;
+  font-size: 16px;
+  @include Inter;
+}
+
+.paragraph_l_medium {
+  font-weight: 500;
+  font-size: 16px;
+  @include Inter;
+}
+
+.paragraph_m_light {
+  font-weight: 300;
+  font-size: 14px;
+  @include Inter;
+}
+
+.paragraph_s_light {
+  font-weight: 300;
+  font-size: 12px;
+  @include Inter;
+}
+
+.caption_s_bold {
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  @include Inter;
+}
+
+.caption_xs_bold {
+  font-weight: 700;
+  font-size: 8px;
+  text-transform: uppercase;
+  @include Inter;
+}

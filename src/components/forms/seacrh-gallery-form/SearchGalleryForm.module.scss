@@ -1,0 +1,61 @@
+.form {
+  position: relative;
+  display: flex;
+
+  &_input {
+    width: 100%;
+    border: 1px solid var(--input-border-color, transparent);
+    border-radius: 4px;
+    padding: 8px 80px 8px 48px;
+    outline: none;
+    color: var(--interface-color, #dedede);
+    font: inherit;
+    background-color: var(--input-bg-color, #1a1818);
+
+    &:focus {
+      border-color: var(--interface-color, #dedede);
+    }
+  }
+
+  @media (width >= "768px") {
+    font-size: 14px;
+
+    &_input {
+      padding: 10px 60px 10px 48px;
+    }
+  }
+
+  @media (width >= "1366px") {
+    &_input {
+      padding: 10px 100px 10px 48px;
+    }
+  }
+}
+
+.search_icon {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  border: none;
+  background-color: transparent;
+  transform: translateY(-50%);
+}
+
+.button_submit {
+  left: 18px;
+}
+
+.button_reset {
+  right: 12px;
+}
+
+.svg_icon * {
+  fill: var(--interface-color, #dedede);
+}

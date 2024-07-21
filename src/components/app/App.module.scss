@@ -1,0 +1,54 @@
+.logo {
+  width: 73px;
+  height: 16px;
+
+  & * {
+    fill: var(--interface-color, #dedede);
+  }
+
+  @media (width > "768px") {
+    width: 91px;
+    height: 20px;
+  }
+}
+
+.theme_toggler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+
+  & svg * {
+    fill: var(--content-color, #dedede);
+  }
+
+  &:has(.theme_toggler_dark) {
+    background-color: #fcfcfc;
+  }
+
+  &:has(.theme_toggler_light) {
+    background-color: #1a1818;
+  }
+
+  &:hover {
+    &:has(.theme_toggler_dark) {
+      background-color: #f3f3f3;
+    }
+
+    &:has(.theme_toggler_light) {
+      background-color: #1b1b1b;
+    }
+  }
+}
+
+.error {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 40px;
+  }
+}

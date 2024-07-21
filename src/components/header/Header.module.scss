@@ -1,0 +1,14 @@
+.header {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: clamp(0.75rem, 0.2143rem + 2.6786vw, 1.5rem) 20px;
+  background-color: var(--primary-color, #121212);
+
+  @media (width >= "1024px") {
+    padding: 20px 100px;
+  }
+}
